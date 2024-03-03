@@ -10,8 +10,8 @@ foaf:based_near <http://www.wikidata.org/entity/Q1296> ;
 schema:memberOf <https://www.wikidata.org/wiki/Q1137665> ;
 foaf:interest <https://www.wikidata.org/wiki/Q133201> ;
 schema:height "198"^^schema:QuantitativeValue ;
-foaf:knows <https://example.org/jensdesutter/#me> ;
-foaf:knows <https://example.org/liasdesmedt/#me> ;
+foaf:knows <https://jensdesutter.github.io/#me> ;
+foaf:knows <https://nicovervaeck.github.io/#me> ;
 schema:memberOf <https://pietercolpaert.be/teaching/kg/#2023-2024> .
 
 
