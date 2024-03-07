@@ -50,7 +50,22 @@
   <footer>
     <p>&copy; 2024 Stijn Oosterlinck. All rights reserved.</p>
   </footer>
-  <script type="text/turtle" src="./lab1.ttl">
+  <script type="text/turtle">
+    @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+    @prefix xsd: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+    @prefix schema: <https://schema.org/>.
+
+
+    <https://stijnoosterlinck.github.io/#me> a foaf:Person ;
+    foaf:name "Stijn Oosterlinck"^^xsd:string ;
+    foaf:age "22"^^xsd:integer ;
+    foaf:based_near <http://www.wikidata.org/entity/Q1296> ;
+    schema:memberOf <https://www.wikidata.org/wiki/Q1137665> ;
+    foaf:interest <https://www.wikidata.org/wiki/Q133201> ;
+    schema:height "198"^^schema:QuantitativeValue ;
+    foaf:knows <https://jensdesutter.github.io/#me> ;
+    foaf:knows <https://nicovervaeck.github.io/#me> ;
+    schema:memberOf <https://pietercolpaert.be/teaching/kg/#2023-2024> .
     </script>
 </body>
 
