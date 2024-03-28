@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Welcome to the website with all the people I know</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to my website. Still a work in progress.</h1>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm Stijn Oosterlinck.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Stijn Oosterlinck. All rights reserved.</p>
+  </footer>
+  <script type="text/turtle">
+    @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+    @prefix xsd: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+    @prefix schema: <https://schema.org/>.
+
+
+    <https://stijnoosterlinck.github.io/#me> a foaf:Person ;
+    foaf:name "Stijn Oosterlinck"^^xsd:string ;
+    foaf:age "22"^^xsd:integer ;
+    foaf:based_near <http://www.wikidata.org/entity/Q1296> ;
+    schema:memberOf <https://www.wikidata.org/wiki/Q1137665> ;
+    foaf:interest <https://www.wikidata.org/wiki/Q133201> ;
+    schema:height "198"^^schema:QuantitativeValue ;
+    foaf:knows <https://jensdesutter.github.io/#me> ;
+    foaf:knows <https://nicovervaeck.github.io/#me> ;
+    foaf:knows <https://razoreater.github.io/iam/#me> ;
+    foaf:knows <https://brakke.net/#nil> ;
+    foaf:knows <https://users.ugent.be/~alatinis/> ;
+    foaf:knows <https://liadsmed.github.io/#me> ;
+    foaf:knows <https://pietercolpaert.be/#me> ;
+    schema:memberOf <https://pietercolpaert.be/teaching/kg/#2023-2024> .
+    </script>
+</body>
+
+</html>

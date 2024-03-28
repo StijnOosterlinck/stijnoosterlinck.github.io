@@ -1,77 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Welcome to the website with all the people I know</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image with Text Overlay</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('elia_logo.png');
+            /* Path to your background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            /* Ensure full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Semi-transparent black layer */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
 
-    h1 {
-      margin: 0;
-    }
-
-    main {
-      padding: 20px;
-    }
-
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-  </style>
+        .text {
+            color: white;
+            font-size: 36px;
+            padding: 20px;
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <h1>Welcome to my website. Still a work in progress.</h1>
-  </header>
-
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hello! I'm Stijn Oosterlinck.</p>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>&copy; 2024 Stijn Oosterlinck. All rights reserved.</p>
-  </footer>
-  <script type="text/turtle">
-    @prefix foaf: <http://xmlns.com/foaf/0.1/>.
-    @prefix xsd: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-    @prefix schema: <https://schema.org/>.
-
-
-    <https://stijnoosterlinck.github.io/#me> a foaf:Person ;
-    foaf:name "Stijn Oosterlinck"^^xsd:string ;
-    foaf:age "22"^^xsd:integer ;
-    foaf:based_near <http://www.wikidata.org/entity/Q1296> ;
-    schema:memberOf <https://www.wikidata.org/wiki/Q1137665> ;
-    foaf:interest <https://www.wikidata.org/wiki/Q133201> ;
-    schema:height "198"^^schema:QuantitativeValue ;
-    foaf:knows <https://jensdesutter.github.io/#me> ;
-    foaf:knows <https://nicovervaeck.github.io/#me> ;
-    foaf:knows <https://razoreater.github.io/iam/#me> ;
-    foaf:knows <https://brakke.net/#nil> ;
-    foaf:knows <https://users.ugent.be/~alatinis/> ;
-    foaf:knows <https://liadsmed.github.io/#me> ;
-    foaf:knows <https://pietercolpaert.be/#me> ;
-    schema:memberOf <https://pietercolpaert.be/teaching/kg/#2023-2024> .
-    </script>
+    <div class="overlay">
+        <div class="text">
+            <h1>Welcome to My Website</h1>
+            <p>This is some sample text overlaying the background image.</p>
+        </div>
+    </div>
 </body>
 
 </html>
